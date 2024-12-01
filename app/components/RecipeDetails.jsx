@@ -66,20 +66,20 @@ const RecipeDetails = ({ recipeDetails }) => {
 
         <h2 className="text-3xl font-bold mb-4">Here are the basics</h2>
         <p className="mb-8">
-          Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy
-          sauce burgers brisket. polenta mustard hunk greens. Wine technique
-          snack skewers chuck excess. Oil heat slowly. slices natural delicious,
-          set aside magic tbsp skillet, bay leaves brown centerpiece. fruit
-          soften edges frond slices onion snack pork steem on wines excess
-          technique cup; Cover smoker soy sauce.
+          Juicy meatballs brisket slammin baked shoulder. Juicy smoker soy sauce
+          burgers brisket. polenta mustard hunk greens. Wine technique snack
+          skewers chuck excess. Oil heat slowly. slices natural delicious, set
+          aside magic tbsp skillet, bay leaves brown centerpiece. fruit soften
+          edges frond slices onion snack pork steem on wines excess technique
+          cup; Cover smoker soy sauce.
         </p>
 
         <blockquote className="text-3xl font-bold italic text-center my-12 px-4">
-          "One cannot think well, love well, sleep well, if one has not dined
-          well."
+          &quot;One cannot think well, love well, sleep well, if one has not
+          dined well.&quot;
         </blockquote>
         <p className="text-center text-gray-600 mb-12">
-          — Virginia Woolf, A Room of One's Own
+          — Virginia Woolf, A Room of Ones Own
         </p>
 
         <h2 className="text-3xl font-bold mb-4">In the kitchen</h2>
@@ -100,12 +100,12 @@ const RecipeDetails = ({ recipeDetails }) => {
         />
 
         <p className="mb-8">
-          Juicy meatballs brisket slammin' baked shoulder. Juicy smoker soy
-          sauce burgers brisket. polenta mustard hunk greens. Wine technique
-          snack skewers chuck excess. Oil heat slowly. slices natural delicious,
-          set aside magic tbsp skillet, bay leaves brown centerpiece. fruit
-          soften edges frond slices onion snack pork steem on wines excess
-          technique cup; Cover smoker soy sauce.
+          Juicy meatballs brisket slammin baked shoulder. Juicy smoker soy sauce
+          burgers brisket. polenta mustard hunk greens. Wine technique snack
+          skewers chuck excess. Oil heat slowly. slices natural delicious, set
+          aside magic tbsp skillet, bay leaves brown centerpiece. fruit soften
+          edges frond slices onion snack pork steem on wines excess technique
+          cup; Cover smoker soy sauce.
         </p>
       </article>
     </>
