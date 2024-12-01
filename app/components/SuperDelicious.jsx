@@ -6,7 +6,7 @@ const SuperDelicious = () => {
   const maxRattingRecipes = allRecipies.filter(
     (recipes) => recipes?.rating?.average_rating >= 4.7
   );
-  console.log(maxRattingRecipes);
+
   return (
     <>
       <section className="mb-16" id="super_delicious">
