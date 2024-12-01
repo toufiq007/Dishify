@@ -26,7 +26,8 @@ const PopularCategories = () => {
         </div>
         <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
           {sortMaxToLowResult.slice(0, 6).map((recipe) => (
-            <div key={recipe.id} className="cursor-pointer text-center group">
+            <Link key={recipe.id} href={`/categories/${recipe.id}`}>
+              <div  className="cursor-pointer text-center group">
               <div className="overflow-hidden rounded-full mb-2 w-20 h-20 mx-auto">
                 <Image
                   src={`/assets${recipe.image}`}
@@ -40,6 +41,7 @@ const PopularCategories = () => {
                 {recipe.name}
               </p>
             </div>
+            </Link>
           ))}
         </div>
       </section>

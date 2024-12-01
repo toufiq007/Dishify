@@ -6,7 +6,7 @@ const Header = () => {
     <>
       <header className="container mx-auto px-4 py-4 shadow-lg fixed top-0 bg-white z-50">
         <nav className="flex justify-between items-center">
-          <a href="/" className="text-3xl font-bold">
+          <Link href="/" className="text-3xl font-bold">
             <Image
               src="/assets/lws-kitchen.png"
               className="h-10"
@@ -14,7 +14,7 @@ const Header = () => {
               width={100}
               height={100}
             />
-          </a>
+          </Link>
           <ul className="hidden md:flex space-x-6">
             <li>
               <Link href="/" className="hover:text-orange-500">
@@ -22,7 +22,7 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/categorires" className="hover:text-orange-500">
+              <Link href="/categories" className="hover:text-orange-500">
                 Categories
               </Link>
             </li>
