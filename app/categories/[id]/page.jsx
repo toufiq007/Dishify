@@ -2,6 +2,7 @@
 import Image from "next/image";
 import allRecipes from "../../../public/data/recipes.json";
 import allCategories from "../../../public/data/categories.json";
+import Link from "next/link";
 
 const RecipesPage = ({ params }) => {
   const modifiyArray = allRecipes.map((recipe) => {
@@ -39,21 +40,23 @@ const RecipesPage = ({ params }) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {filterArr.map((recipe) => (
-            <div
+            <Link
               key={recipe?.category_id}
-              className="bg-white rounded-lg overflow-hidden shadow-md"
+              href={`/${recipe.categoryName}/${recipe.title}`}
             >
-              <Image
-                src={`/assets/thumbs/${recipe.thumbnail}`}
-                width={300}
-                height={100}
-                alt={recipe.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h2 className="font-semibold text-lg mb-2">{recipe.title}</h2>
+              <div className="bg-white rounded-lg overflow-hidden shadow-md">
+                <Image
+                  src={`/assets/thumbs/${recipe.thumbnail}`}
+                  width={300}
+                  height={100}
+                  alt={recipe.title}
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h2 className="font-semibold text-lg mb-2">{recipe.title}</h2>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
           {/* <!-- Repeat the above div structure for the remaining dessert items --> */}
         </div>
