@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import allRecipes from "../../public/data/recipes.json";
 import allCategories from "../../public/data/categories.json";
-  
 const Banner = () => {
   const allRecipesWithCategoryName = allRecipes.map((recipe) => {
     const category = allCategories.find(
@@ -42,7 +41,7 @@ const Banner = () => {
               {allRecipesWithCategoryName[0]?.description}
             </p>
             <Link
-              href="/blog-details.html"
+              href={`/${allRecipesWithCategoryName[0]?.categoryName}/${allRecipesWithCategoryName[0]?.title}`}
               className="bg-orange-500 text-white px-6 py-2 rounded-full inline-block hover:bg-orange-600"
             >
               View Recipe
