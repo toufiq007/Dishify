@@ -12,7 +12,7 @@ const RecipePage = ({params}) => {
     <>
       <main className="container mx-auto px-4 py-8 mt-16">
         <RecipeDetails recipeDetails={findRecipe[0]} />
-        <RecommendedRecipe categoryName={params.categoryName} title={decodeTitle} />
+        <RecommendedRecipe categoryName={params.category} title={decodeTitle} />
       </main>
     </>
   );
