@@ -7,12 +7,12 @@ const RecipePage = ({params}) => {
   const decodeTitle = decodeURIComponent(params.id)
   const findRecipe = allRecipes.filter(recipe=> recipe.title === decodeTitle)
   
-  console.log(findRecipe,'this is the items')
+  console.log(params,'this is the items')
   return (
     <>
       <main className="container mx-auto px-4 py-8 mt-16">
         <RecipeDetails recipeDetails={findRecipe[0]} />
-        <RecommendedRecipe />
+        <RecommendedRecipe categoryName={params.categoryName} title={decodeTitle} />
       </main>
     </>
   );
